@@ -1,0 +1,3 @@
+[submodule "/home/kenobi/.vim/pack/git-plugins/start/al"]
+	path = /home/kenobi/.vim/pack/git-plugins/start/al
+	url = https://github.com/dense-analysis/ale.git
