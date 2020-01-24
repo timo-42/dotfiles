@@ -28,13 +28,25 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Always show status bar
 " set laststatus=2
 
+" add json syntax highlighting
+au BufNewFile,BufRead *.json set ft=javascript
+
+" make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
+au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+
 " Always show ALE Gutter
 let g:ale_sign_column_always = 1
-let g:ale_linters = { 'python': ['flake8']}
+let g:ale_linters = { 'python': ['pyls','flake8'], 'ansible':['ansible-lint']}
 let g:ale_open_list = 1
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_completion_enabled = 1
 
 " Set this. Airline will handle the rest.
 let g:airline#extensions#ale#enabled = 1
+
+" Load all packages now
+packloadall
+" Generate help tags from all packages and ignore errors
+silent! helptags ALL
