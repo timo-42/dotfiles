@@ -55,7 +55,9 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " Always show ALE Gutter
 let g:ale_sign_column_always = 1
-let g:ale_linters = { 'python': ['pyls','flake8'], 'ansible':['ansible-lint']}
+let g:ale_linters = { 'python': ['pyls','flake8','mypy'], 'ansible':['ansible-lint']}
+let g:ale_fixers = { '*': ['remove_trailing_lines', 'trim_whitespace'], 'python' : ['black', 'isort']}
+let g:ale_fix_on_save = 1
 let g:ale_open_list = 1
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
