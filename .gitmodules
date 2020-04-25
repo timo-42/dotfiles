@@ -7,3 +7,12 @@
 [submodule ".vim/pack/git-plugins/start/vim-airline"]
 	path = .vim/pack/git-plugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule ".vim/pack/git-plugins/start/vim-gitgutter"]
+	path = .vim/pack/git-plugins/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/pack/git-plugins/start/vim-fugitive"]
+	path = .vim/pack/git-plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/git-plugins/start/vim-airline-themes"]
+	path = .vim/pack/git-plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
