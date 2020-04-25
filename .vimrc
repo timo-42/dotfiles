@@ -1,4 +1,7 @@
+set nocompatible
+
 syntax on
+filetype plugin indent on
 
 " line numbers
 set number
@@ -13,6 +16,21 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+
+" Disable Backup and Swap files
+set noswapfile
+set nobackup
+set nowritebackup
+
+" NERDTree configuration
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+map <Leader>n :NERDTreeToggle<CR>
+
+" add json syntax highlighting
+au BufNewFile,BufRead *.json set ft=javascript
+
+" make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
+au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " set encoding
 set encoding=utf-8
