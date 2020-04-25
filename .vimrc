@@ -3,6 +3,7 @@ syntax on
 " line numbers
 set number
 set ruler
+set list
 " set cursorline
 
 
