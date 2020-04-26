@@ -16,3 +16,6 @@
 [submodule ".vim/pack/git-plugins/start/vim-airline-themes"]
 	path = .vim/pack/git-plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "/home/kenobi/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+	path = /home/kenobi/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
