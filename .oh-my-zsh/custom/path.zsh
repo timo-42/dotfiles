@@ -1,2 +1,2 @@
 # set rust path
-export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/bin:$HOME/.linuxbrew/bin"
