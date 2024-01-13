@@ -1,21 +1,3 @@
-[submodule ".vim/pack/git-plugins/start/ale"]
-	path = .vim/pack/git-plugins/start/ale
-	url = https://github.com/dense-analysis/ale.git
-[submodule ".vim/pack/git-plugins/start/nerdtree"]
-	path = .vim/pack/git-plugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/pack/git-plugins/start/vim-airline"]
-	path = .vim/pack/git-plugins/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule ".vim/pack/git-plugins/start/vim-gitgutter"]
-	path = .vim/pack/git-plugins/start/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
-[submodule ".vim/pack/git-plugins/start/vim-fugitive"]
-	path = .vim/pack/git-plugins/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule ".vim/pack/git-plugins/start/vim-airline-themes"]
-	path = .vim/pack/git-plugins/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "/home/kenobi/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
 	path = .oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
