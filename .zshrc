@@ -102,3 +102,5 @@ export LC_ALL=en_US.UTF-8
 
 # Created by `pipx` on 2023-09-13 17:44:02
 export PATH="$PATH:/home/kenobi/.local/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
