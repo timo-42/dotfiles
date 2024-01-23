@@ -11,24 +11,25 @@ call plug#begin()
 " You can specify a custom plugin directory by passing it as the argument
 "   - e.g. `call plug#begin('~/.vim/plugged')`
 "   - Avoid using standard Vim directory names like 'plugin'
+" :PlugInstall - installs new Plugins
+" :PlugUpdate - updates Plugins
+" :PlugClean - Removes deleted Plugins
 
 " Make sure you use single quotes
 
 " On-demand loading
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'dense-analysis/ale'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'rust-lang/rust.vim'
 
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-Plug 'dense-analysis/ale'
-
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-Plug 'rust-lang/rust.vim'
-
-" Initialize plugin system
-" - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
 
 " line numbers
@@ -70,17 +71,16 @@ set encoding=utf-8
 
 " Always show ALE Gutter
 let g:ale_completion_enabled = 1
-let g:ale_completion_ = 1
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_fix_on_save = 1
-let g:ale_fixers = { '*': ['remove_trailing_lines', 'trim_whitespace'], 'python' : ['black', 'isort'],'rust':['rustfmt']}
-let g:ale_linters = { 'python': ['pyls','flake8','mypy'], 'ansible':['ansible-lint'], 'rust':['cargo', 'rls', 'analyzer']}
-let g:ale_list_window_size = 5 "size of the ale_open_list/error window
-let g:ale_open_list = 1
-let g:ale_rust_rls_toolchain = 'stable'
-let g:ale_sign_column_always = 1
+"let g:ale_echo_msg_error_str = 'E'
+"let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+"let g:ale_echo_msg_warning_str = 'W'
+let g:ale_fix_on_save = 0
+let g:ale_linters = { 'python': ['pylsp','flake8','mypy'], 'ansible':['ansible-lint'], 'rust':['cargo', 'rls', 'analyzer']}
+let g:ale_fixers = {  '*': ['remove_trailing_lines', 'trim_whitespace'],  'python' : ['black', 'isort','ruff','autoimport'], 'rust': ['rustfmt'] }
+"let g:ale_list_window_size = 5 "size of the ale_open_list/error window
+"let g:ale_open_list = 1
+"let g:ale_rust_rls_toolchain = 'stable'
+"let g:ale_sign_column_always = 1
 
 " swap file write time, also used for git-gutter git diff
 set updatetime=100
