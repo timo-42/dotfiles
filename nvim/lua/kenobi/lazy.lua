@@ -10,6 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
 		lazypath,
 	})
 end
+-- configure plugins
 vim.opt.rtp:prepend(lazypath)
 plugins ={
 	{
@@ -32,8 +33,9 @@ plugins ={
 {'hrsh7th/nvim-cmp'},
 {'L3MON4D3/LuaSnip'},
 
-
-
+-- linter
+--{'mfussenegger/nvim-lint'},
+{'WhoIsSethDaniel/mason-tool-installer'},
 }
 
 
