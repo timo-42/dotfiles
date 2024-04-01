@@ -23,6 +23,12 @@ plugins ={
 	{"nvim-treesitter/playground"},
 	{ "rose-pine/neovim", name = "rose-pine" },
 
+{
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }
+},
+
 -- LSP https://lsp-zero.netlify.app/v3.x/getting-started.html
 --
 {'williamboman/mason.nvim'},
@@ -34,7 +40,8 @@ plugins ={
 {'L3MON4D3/LuaSnip'},
 
 -- linter
---{'mfussenegger/nvim-lint'},
+{'mfussenegger/nvim-lint'},
+-- package manager for linter and formatter
 {'WhoIsSethDaniel/mason-tool-installer'},
 }
 
