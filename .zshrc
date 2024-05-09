@@ -31,7 +31,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias v="/home/kenobi/.linuxbrew/bin/nvim"
+alias vim="/home/kenobi/.linuxbrew/bin/nvim"
+
 export LC_ALL=en_US.UTF-8
+export XDG_CONFIG_HOME=$HOME
 
 export PATH="$PATH:$HOME/.local/bin"
 
