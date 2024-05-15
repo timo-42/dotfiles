@@ -24,15 +24,15 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias v="/home/kenobi/.linuxbrew/bin/nvim"
-alias vim="/home/kenobi/.linuxbrew/bin/nvim"
+alias v="nvim"
+alias vim="nvim"
 
 export LC_ALL=en_US.UTF-8
 export XDG_CONFIG_HOME=$HOME
