@@ -6,5 +6,7 @@ require('mason-tool-installer').setup {
     'mypy',
     'flake8',
     'isort',
+    -- zig
+    'zls',
   },
   }

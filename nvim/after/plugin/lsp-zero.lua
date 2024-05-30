@@ -13,6 +13,7 @@ require('mason-lspconfig').setup({
   ensure_installed = {
       'lua_ls',
       'pylsp',
+      'zls',
   },
   handlers = {
     lsp_zero.default_setup,

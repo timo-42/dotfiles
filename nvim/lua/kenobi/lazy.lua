@@ -18,12 +18,6 @@ plugins = {
 		tag = "0.1.5",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
-	{
-		-- provides ast
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-	},
-	{ "nvim-treesitter/playground" },
 	{ "rose-pine/neovim", name = "rose-pine" },
 
 	{
@@ -43,6 +37,7 @@ plugins = {
 
 	-- linter
 	{ "mfussenegger/nvim-lint" },
+
 	-- package manager for linter and formatter
 	{ "WhoIsSethDaniel/mason-tool-installer" },
 }
